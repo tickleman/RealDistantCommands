@@ -19,10 +19,6 @@ public class RealDistantCommandsPlugin extends JavaPlugin
 	public void onDisable()
 	{
 		getServer().getScheduler().cancelTask(schedule);
-		System.out.println(
-			"[RealDistantCommands] version [" + getDescription().getVersion() + "] ("
-			+ getDescription().getAuthors().toString() + ") un-loaded"
-		);
 	}
 
 	//-------------------------------------------------------------------------------------- onEnable
@@ -86,10 +82,6 @@ public class RealDistantCommandsPlugin extends JavaPlugin
 					}
 				}
 			}, 1L * 20L, 1L * 20L
-		);
-		System.out.println(
-			"[RealDistantCommands] version [" + getDescription().getVersion() + "] ("
-			+ getDescription().getAuthors().toString() + ") loaded"
 		);
 	}
 
